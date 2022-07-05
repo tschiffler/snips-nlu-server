@@ -143,4 +143,4 @@ def fetch_model(locale: str):
 
 if __name__ == '__init__':
     app.debug = True
-    app.run()
+    app.run(host="0.0.0.0", port=5000, threaded=True, debug=True)
